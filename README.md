@@ -28,7 +28,7 @@ This porject is to implement a program that can recognize entities mentioned in 
 
 ### 0. Overview and Description
 
-![image-20211126213203120](/Users/summer/Library/Application Support/typora-user-images/image-20211126213203120.png)
+![asg1_1](asg1_1.png)
 
 #### 1. Read WARC File
 
@@ -72,7 +72,7 @@ Link = "<http://www.wikidata.org/entity/Q918>"
 
 Wikidata provides a common api called "Wikidata Query Service" that allows people to use sparql to search data out of Wikidata. The figure below shows the query and its result for finding the specific web page of one entity. Therefore, we can use it to find the web page which is linked with our entities. 
 
-<img src="/Users/summer/Library/Application Support/typora-user-images/image-20211126204036528.png" alt="image-20211126204036528" style="zoom:50%;" />
+![asg1_2](asg1_2.png)
 
 Recall in the trident, we have the same library of Wikidata so that we can also use the query and it should return the same result. However, in fact, it cannot. Finally, we have to use the online query service to get the answer, resulting in a quite long restful http request process.
 
